@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #d3d3d3; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(images/bg2.jpg);
+}
+
+.me-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+        min-height: 10px;
+        display: flex;
+        align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color:#fffdfc ;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+ position: relative;
+ float: left;
+
+}
+
+.menu .navbar ul li a {
+ font-size: 18px;
+ padding: 20px;
+ color: #fffdfc;
+ display: block;
+ font-weight: 600;
+}
+.menu .navbar ul li a:hover{
+    color:#ce9678 ;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.main-container{
+    display: flex;
+    background-color: #bababa;
+    height: 1500px;
+    width: 1500px;
+    margin: auto;
+    margin-top: 120px;
+    border-radius: 25px;
+   }
+
+.form {
+   width: 50%;
+   padding: 20px 50px;
+   display: flex;
+   flex-direction: column;
+}
+
+.form h2 {
+    font-size: 50px;
+    color: #262526;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.form p {
+    font-size: 16px;
+    color: #262526;
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 15px;
+    color: #262526;
+    margin-bottom: 15px;
+
+}
+
+.box {
+    border: 0;
+    background-color: #fffdfc;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.submit {
+
+    background-color: #242724;
+    border: 0;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 250px;
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(201, 199, 253, 0.5);
+}
+
+.info  {
+ padding:  50px;
+}
+
+.img-1 {
+    width: 350px;
+    margin-bottom: 75px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.icons {
+    display:  flex;
+    margin-bottom:  31px;
+}
+
+.icons img {
+    width: 20px;
+}
+
+.icons p {
+    font-size: 14px;
+    color: #242724;
+}
+
+.social {
+    display: flex;
+}
+
+.social img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+.footer {
+    padding: 100px 0;
+    background-color: #242724;
+}
+
+
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+
+    width: 20%;
+    padding: 0 100px;
+}
+
+.footer-link h3 {
+    font-size: 20px;
+    color: #f9fafc;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #eaccb3;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-link h3 img {
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.footer-link ul li a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* margin: 0 5px 5px 0; */
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #fffdfc;
+    transition: all .5s ease;
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 60px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        text-align: center;
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Contac.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu me-container">
+        <a href="Index.html" class="logo">Logo</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="images/menu.png" class="menu-icono" alt="" />
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="Contactenos.html">Contactenos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <!-- <form class="form" action="https://formsubmit.co/doaby10@gmail.com" method="post"> -->
+        <form class="form" action="https://formsubmit.co/doaby10@gmail.com" method="post">
+        <h2>Solicita Cotización</h2>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" class="box" name="nombre" required />
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" class="box" name="cargo" required />
+
+        <label for="nombreEmpresa">Nombre de la Empresa:</label>
+        <input
+          type="text"
+          id="nombreEmpresa"
+          class="box"
+          name="nombreEmpresa"
+          required
+        />
+
+        <label for="nit">NIT:</label>
+        <input type="text" id="nit" class="box" name="nit" required />
+
+        <label for="actividadEconomica">Actividad Económica:</label>
+        <input
+          type="text"
+          id="actividadEconomica"
+          class="box"
+          name="actividadEconomica"
+          required
+        />
+
+        <label for="direccion">Dirección:</label>
+        <input
+          type="text"
+          id="direccion"
+          class="box"
+          name="direccion"
+          required
+        />
+
+        <label for="Telefono">Telefono:</label>
+        <input type="text" id="Telefono" class="box" name="Telefono" required />
+
+        <label for="barrio">Barrio:</label>
+        <input type="text" id="barrio" class="box" name="barrio" required />
+
+        <label for="Correo">Email:</label>
+        <input type="email" id="Correo" class="box" name="Correo" required />
+
+        <label for="tipoMateriales">Tipo de Materiales a Recoger:</label>
+        <select id="tipoMateriales" class="box" name="tipoMateriales" required>
+          <option value="Vegetal">Orgánicos (origen vegetal o animal)</option>
+          <option value="Aprovechables">Aprovechables</option>
+          <option value="Peligroso">Peligrosos</option>
+        </select>
+
+        <label for="cantidades">Cantidades:</label>
+        <select id="cantidades" class="box" name="cantidades" required>
+          <option value="Kg">Kg</option>
+          <option value="Ton">Ton</option>
+          <option value="NoSabe">No sabe</option>
+        </select>
+
+        <label for="frecuencias">Frecuencias:</label>
+        <select id="frecuencias" class="box" name="frecuencias" required>
+          <option value="Diario">Diario</option>
+          <option value="Semanal">Semanal</option>
+          <option value="Mensual">Mensual</option>
+          <option value="Ocasional">Ocasional</option>
+          <option value="Otro">Otro</option>
+        </select>
+
+        <label for="requiereServicio">Requiere servicio In House:</label>
+        <input
+          type="checkbox"
+          id="requiereServicio"
+          class="box"
+          name="requiereServicio"
+        />
+
+        <label for="adjuntarImagenes">Adjuntar Imágenes:</label>
+        <input
+          type="file"
+          id="adjuntarImagenes"
+          name="adjuntarImagenes"
+          accept="image/*"
+        />
+
+        <button type="submit" value="enviar" class="submit">Enviar</button>
+      </form>
+      <div class="info">
+        <img src="images/info-1.svg" class="img-1" alt="" />
+        <div class="location">
+          <div class="icons">
+            <!-- <img src="images/gps.svg" alt="" /> -->
+            <p>Calle 40G Sur N° 81D-20 Bogotá D.C</p>
+          </div>
+          <div class="icons">
+            <!-- <img src="images/number.svg" alt="" /> -->
+            <p>+57 (310) 280 4103</p>
+          </div>
+          <div class="icons">
+            <!-- <img src="images/email.svg" alt="" /> -->
+            <p>asoingambientales.tl@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="social">
+          <img src="images/fa.svg" alt="" />
+          <img src="images/tw.svg" alt="" />
+          <img src="images/ins.svg" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-row">
+          <div class="footer-link">
+            <h3>Ubicación</h3>
+            <ul>
+              <li><a href="#">Calle 40G Sur N° 81D-20 Bogotá D.C</i></a></li>
+            </ul>
+          </div>
+          <div class="footer-link">
+            <h3>Telefonos</h3>
+            <ul>
+                <li><a href="#">+57 (310) 280 4103</a></li>
+                <li><a href="#">+57 (322) 770 2281</a></li>
+            </ul>
+          </div>
+          <div class="footer-link">
+            <h3>Contactanos</h3>
+            <ul>
+              <li><a href="#">Asoingambientales.tl@gmail.com</a></li>
+             
+            </ul>
+          </div>
+          <div class="footer-link">
+            <h3>Siguenos</h3>
+            <div class="social-link">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
